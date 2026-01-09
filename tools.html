@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABHISEK SHOWCASE IMAGES</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      padding: 30px 15px;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    /* Masonry container */
+    .gallery {
+      column-count: 4;
+      column-gap: 15px;
+      padding: 15px;
+    }
+
+    /* Image card */
+    .gallery img {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      break-inside: avoid;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive breakpoints */
+    @media (max-width: 1200px) {
+      .gallery {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        column-count: 1;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> <a href="index.html" style="text-decoration: none;"> ABHISEK SHOWCASE </a> </h1>
+  </header>
+
+  <div class="gallery">
+    <img src="images/tools/1.png" alt="Showcase Image 1">
+    <img src="images/tools/2.png" alt="Showcase Image 1">
+    <img src="images/tools/3.png" alt="Showcase Image 1">
+    <!-- Add more as needed -->
+  </div>
+
+</body>
+</html>
