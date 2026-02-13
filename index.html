@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,69 +22,25 @@
       padding: 30px 15px;
       text-align: center;
       background: #ffffff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-      margin-bottom: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
     }
 
-    header h1 a {
-      text-decoration: none;
-      color: #000;
-      letter-spacing: 2px;
+    header h1 {
       font-size: 28px;
+      letter-spacing: 2px;
       font-weight: 700;
     }
 
-    /* =========================
-       CATEGORY / FOLDER SECTION
-    ========================== */
-    .categories {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .category {
-      width: 120px;
-      text-align: center;
-      text-decoration: none;
-      color: #000;
-    }
-
-    .category svg {
-      width: 70px;
-      height: 60px;
-      fill: var(--folder-color, #000);
-      /* DEFAULT BLACK */
-      transition: transform 0.2s ease, fill 0.2s ease;
-    }
-
-    .category span {
-      display: inline-block;
-      margin-top: 6px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: #ffc107;
-      font-size: 14px;
-      font-weight: 600;
-      color: #000;
-    }
-
-    .category:hover svg {
-      transform: scale(1.1);
-    }
-
-    /* =========================
-       GALLERY
-    ========================== */
+    /* Masonry container */
     .gallery {
       column-count: 4;
       column-gap: 15px;
       padding: 15px;
     }
 
-    gallery img {
+    /* Image card */
+    .gallery img {
       width: 100%;
       margin-bottom: 15px;
       border-radius: 10px;
@@ -95,13 +50,12 @@
       break-inside: avoid;
     }
 
-
     .gallery img:hover {
       transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
-    /* Responsive */
+    /* Responsive breakpoints */
     @media (max-width: 1200px) {
       .gallery {
         column-count: 3;
@@ -119,53 +73,18 @@
         column-count: 1;
       }
 
-      header h1 a {
+      header h1 {
         font-size: 22px;
       }
     }
   </style>
 </head>
-
 <body>
 
-  <!-- HEADER -->
   <header>
-    <h1>
-      <a href="index.html">ABHISEK SHOWCASE IMAGES</a>
-    </h1>
+    <h1> <a href="index.html" style="text-decoration: none;"> ABHISEK SHOWCASE IMAGES</a> </h1>
   </header>
 
-  <!-- CATEGORY / FOLDERS -->
-  <div class="categories">
-
-    <a href="gaming.html" class="category">
-      <!-- SVG FOLDER ICON -->
-      <svg viewBox="0 0 24 24">
-        <path d="M10 4l2 2h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h6z" />
-      </svg>
-      <span>Gaming</span>
-    </a>
-
-    <a href="tools.html" class="category">
-      <svg viewBox="0 0 24 24">
-        <path d="M10 4l2 2h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h6z" />
-      </svg>
-      <span>Tools</span>
-    </a>
-
-    <a href="productshowcase.html" class="category">
-      <svg viewBox="0 0 24 24">
-        <path d="M10 4l2 2h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h6z" />
-      </svg>
-      <span>Product Showcase Website</span>
-    </a>
-    
-
-    <!-- ADD MORE CATEGORIES SAME WAY -->
-
-  </div>
-
-  <!-- GALLERY -->
   <div class="gallery">
     <img src="images/home/2.png">
     <img src="images/home/1.png">
@@ -189,8 +108,8 @@
     <img src="images/tools/3.png">
     <img src="images/productshowcase/1.png">
     <img src="images/productshowcase/2.png">
+    <!-- Add more as needed -->
   </div>
 
 </body>
-
 </html>
